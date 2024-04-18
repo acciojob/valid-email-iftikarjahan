@@ -1,5 +1,9 @@
 function validEmail(str) {
-  //your JS code here.
+	// Regular expression pattern to validate email addresses
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+    // Test the email against the pattern and return the result
+    return emailPattern.test(str);
 }
 
 // Do not change the code below.
